@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Questions about robotics, intelligence, philosophy, and the world that nag Alphonsus Adu-Bredu.">
+    <meta name="theme-color" content="#071521">
+    <title>Nagging Questions — Alphonsus Adu-Bredu</title>
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="/" aria-label="Home">AAB<span>.</span></a>
+      <nav aria-label="Primary navigation"><a href="/">← Home</a><a href="/#work">Work</a><a href="/#contact">Contact</a></nav>
+    </header>
+
+    <main id="main" class="archive-page">
+      <header class="archive-intro">
+        <p class="eyebrow">A notebook, in progress</p>
+        <h1>Nagging questions</h1>
+        <p class="lede">Questions whose answers are not entirely obvious to me. The hope is that, after garnering diverse troves of knowledge and experience, their answers might reveal themselves—even if by just one candela.</p>
+      </header>
+
+      <ol class="question-list" reversed start="33">
+        <li>
+          <h2>What’s a good way to cache MPC solves?</h2>
+          <p>MPC iterations can be computationally expensive because the system solves a new optimization problem on every iteration. Warm-starting the decision variables helps, but it feels like more data could be reused when the state does not change drastically between ticks. Which data can we reuse, and how do we make that recycling inexpensive?</p>
+        </li>
+        <li>
+          <h2>Can smooth contact approximations produce equally remarkable results on physical robots?</h2>
+          <p>Planning through contact is difficult because contact events are often discrete and non-differentiable. The Mordatch–Todorov route—convex approximation of contact to obtain smooth gradients—has shown remarkable results in simulated physics. Can a similar approach work as well on physical robots?</p>
+          <div class="links"><a href="https://homes.cs.washington.edu/~todorov/papers/MordatchSIGGRAPH12.pdf">Paper ↗</a><a href="https://youtu.be/mhr_jtQrhVA">Example ↗</a></div>
+        </li>
+        <li>
+          <h2>Why is Hell regarded as a “bottomless pit” in the Bible?</h2>
+          <p><strong>Possible answer:</strong> No matter how terrible things are, there is often some bloody stupid thing one could do to make them worse.</p>
+        </li>
+        <li>
+          <h2>What did Jung mean when he said no tree can grow to heaven unless its roots reach down to hell?</h2>
+          <p>How do we guard ourselves from succumbing to the pleasures of not taking responsibility in spite of suffering—the pleasures of victimhood?</p>
+        </li>
+      </ol>
+
+      <aside class="migration-note">
+        <strong>Archive migration in progress.</strong>
+        <p>This prototype includes the newest entries. The complete 33-question WordPress archive will be carried over before the old hosting is retired.</p>
+      </aside>
+    </main>
+
+    <footer><p>© <span id="year">2026</span> Alphonsus Adu-Bredu</p><p><a href="/">Back home ↑</a></p></footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
