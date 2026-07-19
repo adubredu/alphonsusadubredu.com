@@ -13,7 +13,7 @@
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <a class="wordmark" href="/" aria-label="Home">AAB<span>.</span></a>
-      <nav aria-label="Primary navigation"><a href="/">← Home</a><a href="/#work">Work</a><a href="/#contact">Contact</a></nav>
+      <nav aria-label="Primary navigation"><a href="/">← Home</a><a href="/favorite-things/">Favorites</a><a href="/#contact">Contact</a></nav>
     </header>
 
     <main id="main" class="archive-page">
@@ -23,30 +23,193 @@
         <p class="lede">Questions whose answers are not entirely obvious to me. The hope is that, after garnering diverse troves of knowledge and experience, their answers might reveal themselves—even if by just one candela.</p>
       </header>
 
-      <ol class="question-list" reversed start="33">
-        <li>
-          <h2>What’s a good way to cache MPC solves?</h2>
-          <p>MPC iterations can be computationally expensive because the system solves a new optimization problem on every iteration. Warm-starting the decision variables helps, but it feels like more data could be reused when the state does not change drastically between ticks. Which data can we reuse, and how do we make that recycling inexpensive?</p>
-        </li>
-        <li>
-          <h2>Can smooth contact approximations produce equally remarkable results on physical robots?</h2>
-          <p>Planning through contact is difficult because contact events are often discrete and non-differentiable. The Mordatch–Todorov route—convex approximation of contact to obtain smooth gradients—has shown remarkable results in simulated physics. Can a similar approach work as well on physical robots?</p>
-          <div class="links"><a href="https://homes.cs.washington.edu/~todorov/papers/MordatchSIGGRAPH12.pdf">Paper ↗</a><a href="https://youtu.be/mhr_jtQrhVA">Example ↗</a></div>
-        </li>
-        <li>
-          <h2>Why is Hell regarded as a “bottomless pit” in the Bible?</h2>
-          <p><strong>Possible answer:</strong> No matter how terrible things are, there is often some bloody stupid thing one could do to make them worse.</p>
-        </li>
-        <li>
-          <h2>What did Jung mean when he said no tree can grow to heaven unless its roots reach down to hell?</h2>
-          <p>How do we guard ourselves from succumbing to the pleasures of not taking responsibility in spite of suffering—the pleasures of victimhood?</p>
-        </li>
-      </ol>
+      <p class="archive-count">33 questions migrated from the original site</p>
 
-      <aside class="migration-note">
-        <strong>Archive migration in progress.</strong>
-        <p>This prototype includes the newest entries. The complete 33-question WordPress archive will be carried over before the old hosting is retired.</p>
-      </aside>
+      <div class="question-archive">
+        <article class="question-entry" id="question-33">
+          <div class="question-number">33</div>
+          <div class="question-body"><p>What’s a good way to cache MPC solves? MPC iterations can be computationally expensive and slow because the system is solving a whole new optimization problem in each iteration. What if we could cache an aspect of previous iterations so that the subsequent iterations are significantly faster? Warmstarting the decision variables with the previous iteration is one way to speed up subsequent iterations but it feels like we could reuse a lot more of the data from previous iterations considering the state doesn’t usually change drastically from one MPC tick to the next. Which data exactly can we reuse? How do we engineer this solution data recycling into a routine that is inexpensive to call?</p></div>
+        </article>
+        <article class="question-entry" id="question-32">
+          <div class="question-number">32</div>
+          <div class="question-body"><p><strong>Planning through contact is hard because contact events are often discrete and non-differentiable. The <a href="https://homes.cs.washington.edu/~todorov/papers/MordatchSIGGRAPH12.pdf">Mordatch-Todorov</a> route (convex approximation of contact to allow for computing smooth gradients) has shown <a href="https://youtu.be/mhr_jtQrhVA">remarkable results</a> in cartoon physics simulation. Can we realise equally remarkable results on physical robots using a similar approach?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-31">
+          <div class="question-number">31</div>
+          <div class="question-body"><p><strong>Why is Hell regarded as a “bottomless pit” in the Bible?</strong></p><p>A: It is often the case that no matter how terrible things are, there is always some bloody stupid thing you could do to make it worse.</p></div>
+        </article>
+        <article class="question-entry" id="question-30">
+          <div class="question-number">30</div>
+          <div class="question-body"><p><strong>“No tree, it is said, can grow to heaven unless its roots reach down to hell”. What did Carl Jung mean by this? How do we, as roots, guard ourselves from succumbing to the pleasures of hell? The pleasures of not having to take responsibility in spite of our suffering? How do we guard ourselves against the pleasures of victimhood?</strong></p><p>A: A wise man once said, the antidote to chaos is the voluntary acceptance of responsibility; bearing your cross gallantly, so to speak. Living with the aim of justifying the privilege of your existence will keep you from succumbing to the pleasures of victimhood. Maybe…</p></div>
+        </article>
+        <article class="question-entry" id="question-29">
+          <div class="question-number">29</div>
+          <div class="question-body"><p><strong>Can robot task planning and search problems be formulated as Mixed Integer Programs and solved using MILP solvers? This could potentially provide avenues for incorporating the unique dynamic and kinematic constraints robots have in the real world, into the discrete planning problem.</strong></p><p>A: I do exactly that in <a href="https://adubredu.github.io/gtpmip">this project</a>. Paper is in submission at IROS 2022 🙂</p></div>
+        </article>
+        <article class="question-entry" id="question-28">
+          <div class="question-number">28</div>
+          <div class="question-body"><p><strong>When I stare at the face of a person, I can often easily tell whether or not they are staring straight at my pupil. Why did humans evolve to be very good at detecting eye contact?</strong></p><p>A: It’s been said that the eyes are a window to the soul. <a href="https://www.businessinsider.com/how-to-tell-someones-lying-by-watching-their-face-2016-1#count-how-long-someone-closes-their-eyes-3">According to “experts”</a>, the pupils of untalented liars generally shift when they lie. It might be that humans evolved the ability to detect eye contact as a mechanism for lie detection.</p></div>
+        </article>
+        <article class="question-entry" id="question-27">
+          <div class="question-number">27</div>
+          <div class="question-body"><p><strong>What is the evolutionary significance of emotions? Why did humans evolve to feel emotions? What role do emotions play in the survival of the human species?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-26">
+          <div class="question-number">26</div>
+          <div class="question-body"><p><strong>When we watch an engaging movie, our physical environment dissolves away and our consciousness, for lack of a better word, is transported into the world the movie describes and we are able to engage with the artifacts in the movie’s world to the point where it seems almost real. How does our brain manage to do this? Why did our brain evolve the ability to simulate virtual worlds?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-25">
+          <div class="question-number">25</div>
+          <div class="question-body"><p><strong>Why do people scream when they are terrified?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-24">
+          <div class="question-number">24</div>
+          <div class="question-body"><p><strong>Can low-cost robots with cheap sensors and actuators be made as useful as their expensive counterparts through algorithmic advances in probabilistic reasoning? What new ideas need to be generated or old ideas be dug up to make this possible?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-23">
+          <div class="question-number">23</div>
+          <div class="question-body"><p><strong>Clowns are figures of instant amusement and joy. If so, why is it that clowns are often employed as psychotic monsters in western horror literature? Think of characters like <a href="https://en.wikipedia.org/wiki/It_(character)">Pennywise</a>, <a href="https://en.wikipedia.org/wiki/Joker_(character)">The Joker</a>, <a href="https://en.wikipedia.org/wiki/Poltergeist_(1982_film)">Poltergeist</a>, <a href="https://en.wikipedia.org/wiki/Wrinkles_the_Clown">Wrinkles</a>, etc. Why is this contradiction so prevalent in our stories? Could this be a portrayal of the archetypal lesson that instant gratification leads to future tragedies? Or that people who often portray themselves as harmless and innocuous are in fact monsters in disguise?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-22">
+          <div class="question-number">22</div>
+          <div class="question-body"><p><strong>What makes an event memorable? Why do humans remember certain things and forget others? Why do humans have memory? What is the evolutionary importance of memory?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-21">
+          <div class="question-number">21</div>
+          <div class="question-body"><p><strong>Are we good or are we just afraid of the consequences of being bad? If we were put in a situation where we could commit vile acts without any negative consequences, would we still be good?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-20">
+          <div class="question-number">20</div>
+          <div class="question-body"><p><strong>What would be the largest, most effective, most pleasing of all possible sacrifices? How good might the best possible future be if the most effective sacrifice is made?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-19">
+          <div class="question-number">19</div>
+          <div class="question-body"><p><strong>Why does Belief Propagation work?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-18">
+          <div class="question-number">18</div>
+          <div class="question-body"><p><strong>Are our pets spying on us? Are our pets deceiving us? Animals have often displayed uncanny levels of intelligence that is usually dismissed as a fluke. Could it be that some band of animals are indeed just as smart as humans and have been concealing their intelligence in fear of being exploited by humans? Could they be plotting against us while biding their time? What collective measures should we put in place to defend ourselves in the event of an animal uprising?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-17">
+          <div class="question-number">17</div>
+          <div class="question-body"><p><strong>Why does music inspire emotions in people? Is there an evolutionary explanation to this? What is it about the rhythm in music and structured poetry that either delights or distresses people? Could it be that our primal consciousness recognizes beauty in the structure and rhythm of music? How does our primal consciousness even define beauty? Or are our basal emotions represented in our brain in a similar form as music, such that whenever we hear music that has a close enough rhythm and tune to these representations, the corresponding emotions are somehow triggered through resonance? Could we design similar representations in robots, where certain robot actions are triggered when they hear certain rhythms? This could be an interesting technique for inter-robot communication in situations where tele-communication between robots is limited or unavailable. It could also be an interesting way for humans to communicate with robots, by breaking the language barrier. Just sing the right tune to the robot and get it to clean your bathroom for you. How do we go about building such a system?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-16">
+          <div class="question-number">16</div>
+          <div class="question-body"><p><strong>Long horizon planning in the robotics literature is usually performed by coupling high-level symbolic planning with low-level motion planning. Low-level motion planning is performed in the continuous space where the robot tries to find optimal collision-free trajectories along which to move to change its geometric state. These trajectories are planned on a static model of the robot’s environment and assume that the environment would remain the same as the robot executes these trajectories. But in practice, it often happens that in the course of the execution of a trajectory, the robot unintentionally changes the environment by knocking off a plate or shifting a book, making the remainder of the planned trajectory no longer collision-free or optimal. Is modern motion planning formulated in the right manner? Should reactive feedback controllers replace motion planning in long-horizon planning tasks? How would such a problem be formulated? What would the feedback signal be in such controllers? How do we ensure that the controllers run at a fast enough frequency to react to real-time changes in the robot’s environment? A possible setup for long horizon planning could be [Symbolic Planner → Reactive controller + Inverse Kinematics]. Would it be possible to avoid Motion Planning entirely?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-15">
+          <div class="question-number">15</div>
+          <div class="question-body"><p><strong>The Task and Motion Planning community have done some phenomenal work in integrating symbolic and discrete task planning with the more continuous motion planning. However, the symbolic domain description, operators, fluents and pre-conditions needed for task planning are usually specified by hand. Are there ways to exploit recent developments in <a href="https://www.youtube.com/watch?v=4PuuziOgSU4">Neuro-symbolic AI</a> by employing such techniques to learn to develop symbolic representations when given a problem description?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-14">
+          <div class="question-number">14</div>
+          <div class="question-body">
+            <p><strong>Why is meta-learning important or even necessary? Does meta-learning a task produce much better results in terms of sample efficiency and speed of convergence than regular reinforcement learning algorithms?</strong></p>
+            <p><strong>A:</strong> Also known as “Learning to learn”, meta-learning is a way of training agents (neural nets) to effectively learn multiple tasks. This way, with just a few examples, the agent can quickly learn to perform different tasks. The hope is that, by training them to solve multiple tasks, the agents will be able to tap into previous experiences to reduce the number of samples or gradient updates needed to learn a new task. Chelsea Finn showed in her work on <a href="https://arxiv.org/abs/1703.03400">Model-Agnostic Meta Learning (MAML)</a> that coupling MAML with Policy Gradients allows a simulated robot to adapt its locomotion and speed in a single gradient update. Meta-Learning has also been used to enhance <a href="https://openreview.net/forum?id=rJY0-Kcll">few-shot image classification</a> and <a href="http://snowedin.net/tmp/Hochreiter2001.pdf">neural network optimization</a>.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-13">
+          <div class="question-number">13</div>
+          <div class="question-body"><p><strong>Chelsea Finn and Sergey Levine have done some work in getting robots to learn skills from raw videos. It basically involved predicting the next frame in a sequence of image frames. Is this approach viable? Is this the right direction to head towards?</strong></p><p><strong>A:</strong> See the answer to question 12 below.</p></div>
+        </article>
+        <article class="question-entry" id="question-12">
+          <div class="question-number">12</div>
+          <div class="question-body">
+            <p><strong>How can Yoshua Bengio’s recent works on learning disentangled representations be adapted to enable robots to learn skills from videos or a sequence of image frames?</strong></p>
+            <p><strong>A:</strong> The aim of video prediction in robot learning is to enable the robot to learn to predict the next frame of a video. Its proponents hope that by this, the robot would learn the dynamics of objects in their environment; essentially the affordances of objects. Work on <a href="https://arxiv.org/abs/1605.07157">Unsupervised learning of video prediction for physical Interaction</a> by Chelsea Finn, Ian Goodfellow and Sergey Levine focuses on this problem by developing a model that explicitly models pixel motion by predicting a distribution of pixels over pixel motion from the previous frame. Work by Emily Denton and Vighnesh Birodkar on <a href="https://arxiv.org/abs/1705.10915">Unsupervised Learning of Disentangled representations from video</a> proposes a new adversarial loss to factorize video frames into the static part and the temporally varying part. This disentangled representation can then be used to learn video prediction.</p>
+            <p>Even though video prediction might be a valid way for an agent to learn about the physical dynamics of the real world, I still think that, for purely practical robotics purposes, they’re focusing on the wrong problem and use case. The better problem, I believe, would be to figure out how to get robots to learn skills from videos of human demonstrations. With this ability, the robot could, just like humans, learn different skills like cooking, cleaning, carpentry and other manual tasks straight from YouTube videos, first from just observing the humans’ bodily actions. And maybe as the robot develops further, it can be made to understand the full extent of the video by both considering the bodily actions and understanding the words uttered by the human. I don’t see a direct application where mere video prediction addresses these use cases.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-11">
+          <div class="question-number">11</div>
+          <div class="question-body">
+            <p><strong>According to George Konidaris, “The right symbolic state representation depends on the skills available to the agent”. This seems reasonable considering there could be unreachable states if the opposite is done. Learning skills through skill discovery is however a very hard problem. What are some ways of reducing the difficulty of skill discovery? Or is there a much more feasible alternative to pursue?</strong></p>
+            <p><strong>A:</strong> Learning skills through skill discovery is a hard problem primarily because it relies on an RL algorithm to learn a skill that solves the entire problem and then segments this skill into sub-skills. Most SOTA RL algorithms are notorious for being sample inefficient and brittle. A much more realistic way to learn skills would be through an imitation learning and reinforcement learning cocktail, where the agent learns the skill from an expert demonstration and then uses reinforcement learning to refine this learned skill. This process is both faster and sample efficient and has been employed in numerous works like <a href="https://sites.google.com/view/hierarchical-il-rl">Hierarchical Imitation and Reinforcement Learning</a> by Hoang Le et al. from Caltech and <a href="https://relay-policy-learning.github.io/">Relay Policy Learning</a> by Animesh Gupta et al. from UC Berkeley. There’s still a lot more work to be done to make these approaches real-time, as this would be required by a robot deployed in the real world.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-10">
+          <div class="question-number">10</div>
+          <div class="question-body">
+            <p><strong>What are the most important problems in domestic robotics research?</strong></p>
+            <p><strong>A:</strong> Here’s a list of what I think are the most important problems in domestic robotics research. This list is in no way objective and is mostly biased by my interests.</p>
+            <ol>
+              <li><strong>Performing long-horizon tasks in large state spaces.</strong> Robots today are mainly able to perform short horizon tasks like pick-and-place tasks that require little temporal reasoning. In order to effectively assist people in homes, hospitals and social environments, robots should be able to reason and plan for long horizons to perform complex tasks like cleaning a house, cooking a meal, administering medication, and going on errands.</li>
+              <li><strong>Cost-effective mobile manipulator robots.</strong> The most prominent mobile manipulators used in research cost tens of thousands of dollars. The <a href="https://fetchrobotics.com/robotics-platforms/fetch-mobile-manipulator/">Fetch mobile manipulator</a> costs between $70,000 and $100,000. Even cheaper alternatives like <a href="https://www.pyrobot.org/">PyRobot</a>, at $5,000, are not large enough to perform many useful domestic tasks. More work is needed if robots are going to become common in homes.</li>
+              <li><strong>Cost-effective, deformable end-effectors</strong> for manipulating objects of arbitrary geometry and size.</li>
+            </ol>
+          </div>
+        </article>
+        <article class="question-entry" id="question-9">
+          <div class="question-number">09</div>
+          <div class="question-body">
+            <p><strong>Why is there this inexplicable craze for end-to-end robot learning on the West coast and a clamoring for model-based methods on the East coast? Who is right? Is there a middle ground? Is the middle-ground reasonable?</strong></p>
+            <p><strong>A:</strong> Model-based robotics relies on hand-crafted controllers and dynamics models developed from all the work in mechanics dating back to Newton’s F=ma. The pipeline for solving a robotics problem has always been to first develop a mathematical model (plant) of the domain, connect a hand-crafted controller to it to feed it optimized control inputs, connect a sensor to the output of the plant to sense the effect of the plant dynamics on the world, measure the error between the desired effect and the actual effect, and feed this error into the controller to inform it in its effort to feed optimal control inputs to the plant. This pipeline, called closed-loop feedback control, is the core of classical, model-based robotics.</p>
+            <p class="archive-caption">Closed-loop feedback control schematic</p>
+            <p>The major drawbacks with this approach are two-fold. First, if there are slight errors from one module of this pipeline, say the sensors, the errors would be propagated to the controller which in turn would produce control inputs with compounded errors to the plant and cause the plant to act in undesired ways, leading to the ultimate failure of the system. The second drawback is that it is really difficult to design effective controllers or develop accurate enough models for complex systems with high degrees of freedom. These, in part, account for why robots aren’t actively deployed in our homes, hospitals and on our streets, as these domains are unstructured, highly uncertain, dark and full of terrors.</p>
+            <p>The philosophy of end-to-end robot learning is on the other extreme of the spectrum. Proponents of this philosophy believe that given enough data and through interaction with the real world, a robot can learn on its own all the policy it needs to perform tasks successfully. A policy maps states to actions; it decides which actions the robot takes at each state it finds itself in. Given the optimal policy, the robot would be able to perform tasks successfully without any explicit model. They propose to learn this policy through reinforcement learning, where the agent optimizes for taking actions in the world which result in positive rewards—essentially avoiding any form of hand-crafted models or controllers.</p>
+            <p class="archive-caption">Schematic for end-to-end robot learning through reinforcement learning</p>
+            <p>This approach, although sexy and cool, has numerous significant drawbacks. First, the order of magnitude of trials needed for agents to learn policies that efficiently perform a task are in the millions and sometimes billions. As such, agents are generally trained only in simulation, as these can be sped up with no physical repercussions. As far as I know, to date, no agents are trained end-to-end on real robots. Could we then just train agents in simulation and transfer the policies to real-world systems? Not quite. This approach, commonly referred to as Sim2Real, on its own doesn’t quite work because the real world is far more complex than any simulator can express. Policies trained in simulation don’t generalize to real-world environments or even to other simulated environments. Approaches like <a href="https://arxiv.org/abs/1703.06907">Domain Randomization</a> seek to inculcate random noise in the simulated domain during training in the hope that the trained policy becomes robust to the kinds of noise and uncertainty in the real world. This has made Sim2Real transfer possible in <a href="https://arxiv.org/abs/1703.06907">short-horizon, clean tasks</a> like manipulating objects on a flat, open surface. It is not evident that this would work in much more complex tasks with extended horizons and large state spaces.</p>
+            <p>There have been recent approaches to merge the benefits of end-to-end robot learning and model-based robotics. Prominent amongst these is <a href="http://perceptual.actor">work by Sax et al.</a>, where they inculcate priors like the 3D structure of the world and distance—which are common with model-based approaches—into training RL agents. Agents trained with this approach were more sample efficient and generalized better in new environments than those without these priors.</p>
+            <p>Like classical model-based roboticists, I believe that it is infeasible to require robots to learn end-to-end policies from scratch without any form of priors about the real world. I also believe that the ideal domestic robot should already come with a built-in model of the world which it can update quickly on the fly as it encounters more data or is taught to perform a task by its human owner.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-8">
+          <div class="question-number">08</div>
+          <div class="question-body">
+            <p><strong>Would it be necessary to disentangle latent vectors before learning robot skills? If so, what are the state-of-the-art approaches in learning disentanglement of the latent space? Would learning robot skills from latent space instead of pixel space enhance generalization?</strong></p>
+            <p><strong>A:</strong> The <a href="http://perceptual.actor/">work by Sasha Sax and collaborators</a> focuses on exactly this question. They try to find out whether performing some form of disentanglement on pixel information before learning policies has any effect on the performance of the policy. They call the disentangled representations “mid-level perception”. They disentangle features like edges, object classes, distances, and 3D keypoints. Through rigorous experimentation on the <a href="http://gibsonenv.stanford.edu/database/">Gibson database</a>, which consists of 3D scans and reconstructions of real-world environments, they found that first disentangling the mid-level priors before training a policy using RL results in significant performance improvements over end-to-end RL approaches in navigation, local planning and exploration. The policies were also significantly more generalizable across different indoor environments.</p>
+            <p>They also found that the right set of features to disentangle depends on the specific task at hand. Object-class disentanglement was the best prior for navigation. Distance disentanglement was the best prior for exploration. 3D keypoint disentanglement was best for local planning.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-7">
+          <div class="question-number">07</div>
+          <div class="question-body">
+            <p><strong>Can we expect current model-free reinforcement learning approaches to generalize to longer horizon tasks on real-life robots? It seems like all they can do at this point is learn how to stack blocks. Or should more attention be diverted towards model-based approaches even though they are overly sample-inefficient?</strong></p>
+            <p><strong>A:</strong> Vanilla reinforcement learning algorithms are unable to effectively learn to solve long-horizon tasks because such tasks have sparse rewards and, as such, it is difficult to assign credit duly to which actions generate rewards and which do not. There have been numerous efforts to get reinforcement learning to perform long-horizon tasks; many involve a blend of reinforcement learning and imitation learning. Imitation learning involves training a policy through expert demonstrations. DAgger, the most prominent imitation learning algorithm, requires that an expert step in to correct the policy whenever it takes the wrong action, after which it augments this knowledge into its bank, updates its policy and repeats the cycle until it converges to an acceptable performance. Although imitation learning could efficiently enable an agent to learn tasks of significantly long horizons, the need for constant expert demonstrations doesn’t make it ideal for some use cases. Also, the learned policy is upper-bounded by the expert’s proficiency.</p>
+            <p>Merging the good sides of both RL and IL has demonstrated promising results. In <a href="https://arxiv.org/abs/1803.00590">Hierarchical Imitation and Reinforcement Learning</a> by Hoang Le et al., the authors employ a hierarchical framework to reduce the number of times the expert has to intervene. They do this by learning hierarchical policies based on macro-actions—temporally extended actions an agent can take. The authors develop a meta-controller that maps states to macro-actions. Each macro-action consists of sub-policies that map the state to low-level actions. Sub-policies can also trigger a stop signal which transitions control back to the meta-controller.</p>
+            <p>In the course of training:</p>
+            <ol>
+              <li>Label only the macro-action as correct if the meta-controller chooses the right macro-action and the corresponding sub-policies execute successfully.</li>
+              <li>Label only the macro-action as wrong if the meta-controller chooses the wrong macro-action.</li>
+              <li>If the meta-controller chooses the right macro-action and the corresponding sub-policies fail to execute, label the macro-action as correct and correct each low-level action in the sub-policy.</li>
+            </ol>
+            <p>By doing this, they are able to significantly reduce the number of times the expert has to interfere as well as the rate of convergence. This hierarchical approach enables the model to converge to perfect performance significantly faster than any flat imitation-learning algorithm in game domains.</p>
+            <p>If the sub-policies solve short-horizon tasks, reinforcement learning could instead be used to learn good sub-policies while everything else remains the same.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-6">
+          <div class="question-number">06</div>
+          <div class="question-body">
+            <p><strong>How does the skill-chaining algorithm discover promising sub-goals?</strong></p>
+            <p><strong>A:</strong> Skill chaining is a method developed by George Konidaris to enable an agent to learn action abstractions (skills) to complete a task. It employs a method called <a href="https://lis.csail.mit.edu/pubs/tlp/ISRR11.pdf">pre-image backchaining</a>, where the skill chain is developed backwards from the goal all the way to the initial state. By doing this, he avoids the damnable event of falling into an infinite branching factor when starting the search from the initial state. To answer the question directly, the agent doesn’t have to worry about discovering promising sub-goals since the search starts from the target state and goes backwards to the start state. The agent first develops a skill to reach the final target, then a skill to reach the initiation state of the previous skill, and repeats this cycle until it reaches its desired start state.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-5">
+          <div class="question-number">05</div>
+          <div class="question-body">
+            <p><strong>How do you perform long-horizon planning with the aid of Hierarchical Reinforcement Learning?</strong></p>
+            <p><strong>A:</strong> Humans naturally reason over tasks through hierarchies of abstractions. To perform a long-horizon task like travelling to Ghana from Boston, I reason over and string together high-level actions like “packing my luggage”, “taking a taxi to the airport”, “going through TSA checkpoints”, “boarding the plane” and “alighting when the plane arrives at the airport in Ghana”. Each high-level action is an abstraction representing a set of low-level actions strung together in a specific manner to achieve an end goal. For instance, “packing my luggage” is composed of sub-actions like picking up clothes, folding them, and arranging them in the suitcase. These sub-actions can be broken down into finer and finer actions, all the way down to stretching and contracting muscles, forming a hierarchy of multiple levels of abstraction. Reasoning over abstractions enables quicker and longer-horizon planning, as there are generally fewer abstract states and actions to consider.</p>
+            <p>Likewise, hierarchical reasoning is essential for planning long-horizon tasks by robots. By generating a hierarchy of actions, the robot can string together high-level actions in the right sequence. The major question becomes: how do we get the robot to build these abstraction hierarchies? Should we manually design them and program them into the robot, or should the robot learn them? The former is quick, robust and reliable, but may require new hierarchies for every task if they do not generalize. The latter enables the robot to learn action hierarchies for each task or family of related tasks. The most prominent way to learn such hierarchies today is through Hierarchical Reinforcement Learning (HRL). HRL has seen success in both <a href="https://arxiv.org/abs/1703.01161">games</a> and <a href="https://arxiv.org/abs/1710.09767">simulation</a>. It is hard for this success to translate to physical robots because HRL algorithms are sample inefficient and impractical to train from scratch on hardware.</p>
+          </div>
+        </article>
+        <article class="question-entry" id="question-4">
+          <div class="question-number">04</div>
+          <div class="question-body"><p><strong>What is Model Predictive Control all about?</strong></p><p><strong>A:</strong> Model Predictive Control is a feedback control algorithm that uses a model to make predictions about future outputs of the model.</p></div>
+        </article>
+        <article class="question-entry" id="question-3">
+          <div class="question-number">03</div>
+          <div class="question-body"><p><strong>What is Optimal Control all about?</strong></p></div>
+        </article>
+        <article class="question-entry" id="question-2">
+          <div class="question-number">02</div>
+          <div class="question-body"><p><strong>Is a Bug algorithm used in Roomba?</strong></p><p><strong>A:</strong> Not specifically. According to <a href="https://electronics.howstuffworks.com/gadgets/home/robotic-vacuum2.htm">this article</a>, Roomba moves in an outward-moving spiral, heads to the perimeter of the room until it hits an obstacle, and performs wall-following until the clean-up time is over.</p></div>
+        </article>
+        <article class="question-entry" id="question-1">
+          <div class="question-number">01</div>
+          <div class="question-body"><p><strong>What is KL Divergence and why do I keep seeing it in papers I read?</strong></p><p><strong>A:</strong> I answered this question in a longer post in the original archive.</p></div>
+        </article>
+      </div>
     </main>
 
     <footer><p>© <span id="year">2026</span> Alphonsus Adu-Bredu</p><p><a href="/">Back home ↑</a></p></footer>
