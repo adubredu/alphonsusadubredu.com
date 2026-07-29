@@ -165,15 +165,8 @@ h1 em { color: var(--accent); font-weight: inherit; }
 footer { width: min(calc(100% - 3rem), var(--max)); margin: 0 auto; padding: 2rem 0; display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; }
 footer p { margin: 0; }
 
-.video-dialog { width: min(1100px, calc(100% - 2rem)); max-width: none; padding: 0; color: var(--ink); background: var(--surface); border: 1px solid var(--line); box-shadow: 0 24px 80px rgba(0, 0, 0, .55); }
-.video-dialog::backdrop { background: rgba(2, 8, 14, .86); backdrop-filter: blur(5px); }
-.video-dialog-shell { width: 100%; }
-.video-dialog-header { min-height: 58px; padding: .8rem 1rem .8rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); }
-.video-dialog-header p { margin: 0; overflow: hidden; font-family: Georgia, serif; font-size: clamp(1rem, 2vw, 1.25rem); text-overflow: ellipsis; white-space: nowrap; }
-.video-dialog-close { flex: 0 0 auto; width: 38px; height: 38px; display: grid; place-items: center; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 50%; cursor: pointer; font: inherit; font-size: 1.45rem; line-height: 1; }
-.video-dialog-close:hover, .video-dialog-close:focus-visible { color: var(--white); background: var(--accent); border-color: var(--accent); }
-.video-frame { width: 100%; aspect-ratio: 16 / 9; background: #000; }
-.video-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
+.news-feature-media.is-playing { background: #000; }
+.news-feature-media.is-playing iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 .archive-page { width: min(calc(100% - 3rem), 900px); margin: 0 auto; padding: clamp(5rem, 11vw, 9rem) 0; }
 .archive-intro { padding-bottom: clamp(4rem, 8vw, 7rem); }
