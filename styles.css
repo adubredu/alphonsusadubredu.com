@@ -82,7 +82,6 @@ nav a { font-size: .83rem; text-transform: uppercase; letter-spacing: .08em; tex
 .hero-eyebrow a:hover { color: var(--ink); }
 h1, h2, h3, p { margin-top: 0; }
 h1 { max-width: 850px; margin-bottom: 1.75rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3rem, 6.5vw, 6.5rem); line-height: .99; letter-spacing: -.055em; font-weight: 500; }
-.hero h1 { font-size: clamp(3rem, 4.7vw, 5rem); line-height: 1.04; }
 h1 em { color: var(--accent); font-weight: inherit; background: linear-gradient(105deg, #a9d9e9 4%, #ffd18d 85%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .lede { max-width: 680px; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.28rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2.1rem; }
@@ -268,7 +267,6 @@ footer p { margin: 0; }
 @media (max-width: 560px) {
   .site-header, .hero, .section, footer { width: min(calc(100% - 2rem), var(--max)); }
   h1 { font-size: clamp(2.8rem, 15vw, 4.5rem); }
-  .hero h1 { font-size: clamp(2.75rem, 11.5vw, 3.55rem); }
   .hero { padding-top: 3.5rem; }
   .hero-eyebrow { gap: .25rem .45rem; }
   .portrait-wrap { width: min(280px, 90%); margin-left: .5rem; }
